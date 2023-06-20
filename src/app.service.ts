@@ -6,7 +6,7 @@ dotenv.config()
 
 @Injectable()
 export class AppService {
-  async getOsmData(keyword) {
+  async fetchStores(keyword) {
     if (!keyword) {
       return {}
     }

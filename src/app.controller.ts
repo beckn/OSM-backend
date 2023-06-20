@@ -6,8 +6,8 @@ export class AppController {
   constructor(private readonly appService: AppService) { }
 
   @Get('/stores/:keyword')
-  async getOsmData(@Param() reqParam: QueryDto) {
+  async fetchStores(@Param() reqParam: QueryDto) {
     console.log(reqParam?.keyword)
-    return await this.appService.getOsmData(reqParam?.keyword);
+    return await this.appService.fetchStores(reqParam?.keyword);
   }
 }
