@@ -6,8 +6,8 @@ dotenv.config()
 
 @Injectable()
 export class AppService {
-  async fetchStores(keyword) {
-    if (!keyword) {
+  async fetchStores(reqParam) {
+    if (!reqParam) {
       return {}
     }
     try {
@@ -18,7 +18,7 @@ export class AppService {
           headers: {
             'content-type': 'application/json;charset=UTF-8',
           },
-          body: `[out:json];node(${process.env.MINLAT},${process.env.MINLAN},${process.env.MAXLAT},${process.env.MAXLAN})[amenity=${keyword}];out;`
+          body: `[out:json];node(around:100.00,${reqParam.latitude},${reqParam.longitude})[${reqParam.tagName}=${reqParam.tagValue}];out;`
         })
       const data = await response.text()
       console.log(data)
