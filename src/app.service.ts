@@ -21,8 +21,8 @@ export class AppService {
           body: `[out:json];node(around:100.00,${reqParam.latitude},${reqParam.longitude})[${reqParam.tagName}=${reqParam.tagValue}];out;`
         })
       const data = await response.text()
-      console.log(data)
-      return data
+      let res = JSON.parse(data)
+      return res.elements
     } catch (error) {
       console.error(error);
     }
