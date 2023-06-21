@@ -4,17 +4,17 @@ export class QueryDto {
     @ApiProperty({
         type: String
     })
-    tagName?: string
+    tagName: string
     @ApiProperty({
         type: String
     })
-    tagValue?: string
+    tagValue: string
     @ApiProperty({
         type: Number
     })
-    latitude?: number
+    latitude: number
     @ApiProperty({
         type: Number
     })
-    longitude?: number
+    longitude: number
 }
