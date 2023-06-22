@@ -18,7 +18,7 @@ export class AppService {
           headers: {
             'content-type': 'application/json;charset=UTF-8',
           },
-          body: `[out:json];node(around:100.00,${reqParam.latitude},${reqParam.longitude})[${reqParam.tagName}=${reqParam.tagValue}];out;`
+          body: `[out:json];node(around:20000.00,${reqParam.latitude},${reqParam.longitude})[${reqParam.tagName}=${reqParam.tagValue}];out;`
         })
       const data = await response.text()
       let res = JSON.parse(data)
