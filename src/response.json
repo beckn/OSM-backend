@@ -1,0 +1,57 @@
+[
+    {
+        "type": "node",
+        "id": 97,
+        "lat": 48.8460342,
+        "lon": 2.3423751,
+        "tags": {
+            "becknify": "books",
+            "providerId": "./retail.kirana/ind.blr/97@retail-osm-stage.becknprotocol.io.provider",
+            "name": "Librairie de petits plats"
+        }
+    },
+    {
+        "type": "node",
+        "id": 98,
+        "lat": 48.8453391,
+        "lon": 2.3411741,
+        "tags": {
+            "becknify": "books",
+            "providerId": "./retail.kirana/ind.blr/97@retail-osm-stage.becknprotocol.io.provider",
+            "name": "Publications de la Sorbonne"
+        }
+    },
+    {
+        "type": "node",
+        "id": 97,
+        "lat": 48.8468458,
+        "lon": 2.3399994,
+        "tags": {
+            "becknify": "books",
+            "providerId": "./retail.kirana/ind.blr/97@retail-osm-stage.becknprotocol.io.provider",
+            "name": "Publishing and Bookstore Pedone"
+        }
+    },
+    {
+        "type": "node",
+        "id": 98,
+        "lat": 48.8473723,
+        "lon": 2.3410207,
+        "tags": {
+            "becknify": "books",
+            "providerId": "./retail.kirana/ind.blr/97@retail-osm-stage.becknprotocol.io.provider",
+            "name": "Librairie du Cinéma du Panthéon Cinélittérature"
+        }
+    },
+    {
+        "type": "node",
+        "id": 99,
+        "lat": 48.8472414,
+        "lon": 2.3409513,
+        "tags": {
+            "becknify": "books",
+            "providerId": "./retail.kirana/ind.blr/97@retail-osm-stage.becknprotocol.io.provider",
+            "name": "Librairie LGDJ"
+        }
+    }
+]
