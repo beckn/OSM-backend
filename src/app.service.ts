@@ -9,21 +9,21 @@ import response from './response.json'
 export class AppService {
   async fetchStores(reqParam) {
     if (!reqParam) {
-      return response
+      return {}
     }
     try {
-      // const response = await fetch(
-      //   process.env.OVERPASSURL
-      //   , {
-      //     method: 'POST',
-      //     headers: {
-      //       'content-type': 'application/json;charset=UTF-8',
-      //     },
-      //     body: `[out:json];node(around:5000.00,${reqParam.latitude},${reqParam.longitude})[${reqParam.tagName}=${reqParam.tagValue}];out 100;`
-      //   })
-      // const data = await response.text()
-      // let res = JSON.parse(data)
-      return response
+      const response = await fetch(
+        process.env.OVERPASSURL
+        , {
+          method: 'POST',
+          headers: {
+            'content-type': 'application/json;charset=UTF-8',
+          },
+          body: `[out:json];node(around:5000.00,${reqParam.latitude},${reqParam.longitude})[${reqParam.tagName}=${reqParam.tagValue}];out 100;`
+        })
+      const data = await response.text()
+      let res = JSON.parse(data)
+      return res.elements
     } catch (error) {
       console.error(error);
     }
