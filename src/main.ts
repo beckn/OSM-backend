@@ -11,7 +11,12 @@ async function bootstrap() {
     .addTag('osm')
     .build();
   const document = SwaggerModule.createDocument(app, config);
-  SwaggerModule.setup('api', app, document);
+  SwaggerModule.setup('api', app, document, {
+    swaggerOptions: {
+      tagsSorter: 'alpha',
+      operationsSorter: 'alpha',
+    }
+  });
   app.enableCors();
   await app.listen(3000);
 }
