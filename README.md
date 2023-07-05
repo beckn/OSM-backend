@@ -45,3 +45,5 @@ npm i
 # watch mode
 npm run start:dev
 ```
+
+6.Swagger documentation https://api.osm-dev.becknprotocol.io/api#/
