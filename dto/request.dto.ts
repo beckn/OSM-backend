@@ -17,4 +17,8 @@ export class QueryDto {
         type: Number
     })
     longitude: number
+    @ApiProperty({
+        type: Number
+    })
+    filter: number
 }
