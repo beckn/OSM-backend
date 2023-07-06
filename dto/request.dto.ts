@@ -1,4 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger"
+import { string } from "yargs"
 
 export class QueryDto {
     @ApiProperty({
@@ -18,7 +19,7 @@ export class QueryDto {
     })
     longitude: number
     @ApiProperty({
-        type: Number
+        type: String
     })
     filter: string
 }
