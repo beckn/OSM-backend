@@ -20,5 +20,5 @@ export class QueryDto {
     @ApiProperty({
         type: Number
     })
-    filter: number
+    filter: string
 }
