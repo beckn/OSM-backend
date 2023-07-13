@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "9c72c06b-ed79-4dfd-bd6f-24c858a44ad1",
+		"name": "OSM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "23006756"
+	},
+	"item": [
+		{
+			"name": "OSM-api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.osm-dev.becknprotocol.io/stores?tagName=becknified&tagValue=true&latitude=48.8503635&longitude=2.3432148",
+					"protocol": "https",
+					"host": [
+						"api",
+						"osm-dev",
+						"becknprotocol",
+						"io"
+					],
+					"path": [
+						"stores"
+					],
+					"query": [
+						{
+							"key": "tagName",
+							"value": "becknified"
+						},
+						{
+							"key": "tagValue",
+							"value": "true"
+						},
+						{
+							"key": "latitude",
+							"value": "48.8503635"
+						},
+						{
+							"key": "longitude",
+							"value": "2.3432148"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
